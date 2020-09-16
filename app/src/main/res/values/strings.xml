@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Leader</string>
+    <string name="leader_board">LEADERBOARD</string>
+    <string name="submit">SUBMIT</string>
+    <string-array name="tab_titles">
+        <item>Learning Leaders</item>
+        <item>Skill IQ Leaders</item>
+    </string-array>
 </resources>

@@ -1,4 +1,4 @@
-package com.cruxrepublic.leader
+package com.cruxrepublic.leader.ui
 
 import androidx.lifecycle.ViewModel
 
