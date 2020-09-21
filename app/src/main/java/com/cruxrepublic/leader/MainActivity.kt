@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         val navController = findNavController(R.id.nav_host_fragment)
         NavigationUI.setupActionBarWithNavController(this,navController)
-        setupActionBarWithNavController(navController)
+//        setupActionBarWithNavController(navController)
 
         tvSubmit.setOnClickListener {
             navController.navigate(R.id.action_mainFragment_to_submitFragment)
@@ -37,11 +37,11 @@ class MainActivity : AppCompatActivity() {
         }
         fun hideToolBarTitle(activity: Activity){
             activity.leaderAppBar.visibility = View.GONE
-
+            activity.submitAppBar.visibility = View.VISIBLE
         }
         fun showBarTitle(activity: Activity){
             activity.leaderAppBar.visibility = View.VISIBLE
-
+            activity.submitAppBar.visibility = View.GONE
         }
     }
 }

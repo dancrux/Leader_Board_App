@@ -34,10 +34,9 @@ class MainFragment : Fragment() {
 //        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 //        // TODO: Use the ViewModel
         setUpViewPager(viewpager)
-        TabLayoutMediator(tabLayout, viewpager, TabLayoutMediator.TabConfigurationStrategy{
-            tab: TabLayout.Tab, position: Int ->
-            tab.text = titles[position].toString()
-        }).attach()
+        TabLayoutMediator(tabLayout, viewpager) { tab: TabLayout.Tab, position: Int ->
+            tab.text = titles[position]
+        }.attach()
 
     }
 
