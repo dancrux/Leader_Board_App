@@ -19,7 +19,6 @@
             android:theme="@style/ToolbarTheme"
             app:titleTextColor="@color/colorWhite"
             app:subtitleTextColor="@color/colorWhite"
-            app:navigationIcon="@color/colorWhite"
             >
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/leaderAppBar"
