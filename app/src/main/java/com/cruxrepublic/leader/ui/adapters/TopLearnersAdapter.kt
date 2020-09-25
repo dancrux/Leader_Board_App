@@ -35,7 +35,8 @@ class TopLearnersAdapter(): RecyclerView.Adapter<TopLearnersAdapter.TopLearnersV
 
 //        val badgeUrl = item.badgeUrl
         Glide.with(holder.badge)
-            .load(item.badgeUrl).centerCrop()
+            .load(item.badgeUrl)
+            .centerCrop()
             .placeholder(R.drawable.top_learner_badge)
             .into(holder.badge)
     }

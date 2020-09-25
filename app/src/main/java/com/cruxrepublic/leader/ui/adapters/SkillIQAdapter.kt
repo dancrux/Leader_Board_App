@@ -22,12 +22,13 @@ class SkillIQAdapter(): RecyclerView.Adapter<SkillIQAdapter.SkillViewHolder>() {
     override fun onBindViewHolder(holder: SkillIQAdapter.SkillViewHolder, position: Int) {
        val item = iqItems[position]
         holder.name.text = item.name
-        holder.score.text = item.score.toString()
+        holder.score.text = "${item.score} skill IQ Score"
         holder.country.text = item.country
 
 //        val badgeUrl = item.badgeUrl
         Glide.with(holder.badge)
-            .load(item.badgeUrl).centerCrop()
+            .load(item.badgeUrl)
+            .centerCrop()
             .placeholder(R.drawable.top_learner_badge)
             .into(holder.badge)
     }

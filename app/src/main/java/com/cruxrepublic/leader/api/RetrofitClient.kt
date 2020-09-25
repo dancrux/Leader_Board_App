@@ -20,7 +20,8 @@ object RetrofitClient {
     }.build()
 
     val apiInstance: ApiServices by lazy {
-        val retrofit = Retrofit.Builder().baseUrl(BASE_URL)
+        val retrofit = Retrofit.Builder()
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()
@@ -29,7 +30,8 @@ object RetrofitClient {
     }
 
     val submitInstance:ApiServices by lazy {
-        val retrofit = Retrofit.Builder().baseUrl(BASE_SUBMIT_URL)
+        val retrofit = Retrofit.Builder()
+            .baseUrl(BASE_SUBMIT_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()
