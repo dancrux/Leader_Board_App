@@ -2,6 +2,11 @@
     <string name="app_name">Leader</string>
     <string name="leader_board">LEADERBOARD</string>
     <string name="submit">SUBMIT</string>
+    <string name="project_submission">Project Submission</string>
+    <string name="project_on_github_link">Project on Github(link)</string>
+    <string name="email">Email</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
     <string-array name="tab_titles">
         <item>Learning Leaders</item>
         <item>Skill IQ Leaders</item>
