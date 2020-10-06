@@ -46,7 +46,7 @@ class TopLearnersAdapter(): RecyclerView.Adapter<TopLearnersAdapter.TopLearnersV
     inner class TopLearnersViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         var name: TextView = itemView.findViewById(R.id.iqNameTextView)
         var hours: TextView = itemView.findViewById(R.id.hoursTextView)
-        var country: TextView = itemView.findViewById(R.id.iqCountryTextView)
+        var country: TextView = itemView.findViewById(R.id.countryTextView)
         var badge: ImageView = itemView.findViewById(R.id.learnersImage)
 
     }

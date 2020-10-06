@@ -23,7 +23,7 @@
             android:id="@+id/action_submitFragment_to_youSureDialog"
             app:destination="@id/youSureDialog" />
     </fragment>
-    <fragment
+    <dialog
         android:id="@+id/youSureDialog"
         android:name="com.cruxrepublic.leader.YouSureDialog"
         android:label="you_sure_dialog_fragment"
