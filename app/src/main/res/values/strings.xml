@@ -11,4 +11,7 @@
         <item>Learning Leaders</item>
         <item>Skill IQ Leaders</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="submission_not_successful">Submission Not Successful</string>
 </resources>

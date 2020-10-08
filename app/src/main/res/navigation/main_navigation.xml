@@ -25,7 +25,24 @@
     </fragment>
     <dialog
         android:id="@+id/youSureDialog"
-        android:name="com.cruxrepublic.leader.YouSureDialog"
+        android:name="com.cruxrepublic.leader.ui.YouSureDialog"
         android:label="you_sure_dialog_fragment"
-        tools:layout="@layout/you_sure_dialog_fragment" />
+        tools:layout="@layout/you_sure_dialog_fragment" >
+        <action
+            android:id="@+id/action_youSureDialog_to_submissionNotSuccessful"
+            app:destination="@id/submissionNotSuccessful" />
+        <action
+            android:id="@+id/action_youSureDialog_to_submissionSuccessful"
+            app:destination="@id/submissionSuccessful" />
+    </dialog>
+    <dialog
+        android:id="@+id/submissionNotSuccessful"
+        android:name="com.cruxrepublic.leader.ui.SubmissionNotSuccessful"
+        android:label="fragment_submission_not_successful"
+        tools:layout="@layout/fragment_submission_not_successful" />
+    <dialog
+        android:id="@+id/submissionSuccessful"
+        android:name="com.cruxrepublic.leader.ui.SubmissionSuccessful"
+        android:label="fragment_submission_successful"
+        tools:layout="@layout/fragment_submission_successful" />
 </navigation>

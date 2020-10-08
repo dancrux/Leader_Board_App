@@ -61,7 +61,7 @@ class TopLearnersFragment : Fragment() {
                 response: Response<List<TopLearnersResponse>>
             ) {
 
-                if (response.code() == 200) {
+                if (response.isSuccessful) {
 //                    val learners = response.body()!!
                     learnerProgressBar.visibility = View.GONE
 //                  learnerAdapter.addItems(response.body())
